@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .signup-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .signup-container input {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .signup-container button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .signup-container button:hover {
+      background: #0069d9;
+    }
+    .signup-container p {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .signup-container a {
+      color: #28a745;
+      text-decoration: none;
+    }
+    .signup-container a:hover {
+      text-decoration: underline;
+    }
+    .message {
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .success {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="text" id="fullname" placeholder="Full Name" required/>
+      <input type="email" id="email" placeholder="Email" required/>
+      <input type="password" id="password" placeholder="Password" required/>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" required/>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div id="signup-success" class="message success"></div>
+    <div id="signup-error" class="message error"></div>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+  <script type="module" src="signup.js"></script>
+</body>
+</html>
+
